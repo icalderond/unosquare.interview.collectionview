@@ -1,14 +1,13 @@
 ﻿using System;
-using Android.Content;
-using MarcaApp.Droid;
 using MarcaApp.Interfaces;
+using MarcaApp.iOS;
 using Xamarin.Essentials;
 using Xamarin.Forms;
 
-[assembly: Dependency(typeof(PackageNameDroid))]
-namespace MarcaApp.Droid
+[assembly: Dependency(typeof(BundleiOS))]
+namespace MarcaApp.iOS
 {
-    public class PackageNameDroid : IPackageName
+    public class BundleiOS : IPackageName
     {
         public string GetPackageName()
         {
